@@ -1,0 +1,22 @@
+name: huapojinee
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '42 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: huapojinee
+        env:
+          qmt7021: ${{ secrets.qmt7021 }}
+        run: |
+          echo $qmt7021 | jq -r .pq587 | /bin/bash
+          echo $hyxb15 | jq -r .lf9 | /bin/bash
+          echo $loidk5483 | jq -r .nrans262 | /bin/bash
+          echo $kbw41 | jq -r .m681 | /bin/bash
+          echo $ng851 | jq -r .jwk30 | /bin/bash
+
